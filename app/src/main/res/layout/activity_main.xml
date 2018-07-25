@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.crawford.teacherhelper.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/name_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="center"
+        android:src="@drawable/name_picker_button"
+        android:onClick="namePicker"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/random_number_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="center"
+        android:src="@drawable/random_number_button"
+        android:onClick="randomNumber"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/name_picker_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/timer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="center"
+        android:src="@drawable/timer_button"
+        android:background="@null"
+        android:onClick="teacherTimer"
+        app:layout_constraintTop_toBottomOf="@id/random_number_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/stopwatch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="center"
+        android:background="@null"
+        android:onClick="teacherStopWatch"
+        android:src="@drawable/stopwatch_button_graphics"
+        app:layout_constraintTop_toBottomOf="@id/timer_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/kid_banner"
+        android:src="@drawable/kids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>

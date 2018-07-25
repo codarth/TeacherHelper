@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titleBar">#ff5511</color>
+    <color name="title">#559966</color>
+    <color name="inputColor">#5511dd</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorOrange">#ff6400</color>
+    <color name="colorBackground">#ffcc99</color>
+    <color name="primary_text_default_material_light">#000000</color>
+</resources>
